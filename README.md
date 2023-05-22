@@ -1,4 +1,6 @@
 # Personal-Website
 My personal portfolio website
 
-Built with React.JS for Frontend and Astro
+Built with Astro
+
+Please look at master branch, kind of a noob at git lol
