@@ -1,7 +1,11 @@
 ---
 export interface Props {
 	title: string;
+	description: string;
+
 }
+
+const { title, description } = Astro.props;
 
 ---
 
@@ -9,11 +13,11 @@ export interface Props {
 <html lang="en">
 	<head>
 		<meta charset="UTF-8" />
-		<meta name="description" content="Srijan Ray Personal Portfolio">
+		<meta name="description" content={description}>
 		<meta name="viewport" content="width=device-width" />
 		<link rel="icon" type="image/svg" href="/icon.svg" />
 		<meta name="generator" content={Astro.generator} />
-		<title>Srijan Ray</title>
+		<title>{title}</title>
 	</head>
 	<body>
 		<slot />

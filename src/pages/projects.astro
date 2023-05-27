@@ -3,14 +3,16 @@ import Layout from '../layouts/Layout.astro';
 import Card from '../components/Card.astro';
 import Navbar from '../components/Navbar.astro';
 ---
-<div>
-    <Navbar title = "head" />
-</div>
-<div>
-    <h1>Projects</h1>
-    <img
-        src = "SLCConference.jpg"
-        alt = "Srijan Ray Presentation at Johns Hopkins Applied Physics Laboratory Student Learning Conference"
-        class="w-auto h-96"/>
-        
-</div>
+<Layout title = "Projects" description="Srijan Ray's Personal Projects">
+    <div>
+        <Navbar title = "head" />
+    </div>
+    <div>
+        <h1>Projects</h1>
+        <img
+            src = "SLCConference.jpg"
+            alt = "Srijan Ray Presentation at Johns Hopkins Applied Physics Laboratory Student Learning Conference"
+            class="w-auto h-96"/>
+            
+    </div>
+</Layout>
