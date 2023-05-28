@@ -1,6 +1,7 @@
 ---
 import Layout from '../layouts/Layout.astro';
 import Card from '../components/Card.astro';
+import ProjectCard from '../components/HomeProjectCard.jsx';
 import Navbar from '../components/Navbar.astro';
 ---
 <Layout title = "Projects" description="Srijan Ray's Personal Projects">
@@ -9,10 +10,23 @@ import Navbar from '../components/Navbar.astro';
     </div>
     <div>
         <h1>Projects</h1>
+        
         <img
             src = "SLCConference.jpg"
             alt = "Srijan Ray Presentation at Johns Hopkins Applied Physics Laboratory Student Learning Conference"
             class="w-auto h-96"/>
             
     </div>
+    <div class="grid grid-cols-3">
+        <div class="">
+            <ProjectCard />
+        </div>
+        <div>
+            <ProjectCard />
+        </div>
+        <div>
+            <ProjectCard />
+        </div>
+    </div>
+    
 </Layout>
