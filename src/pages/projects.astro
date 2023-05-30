@@ -1,8 +1,7 @@
 ---
 import Layout from '../layouts/Layout.astro';
-import Card from '../components/Card.astro';
-import ProjectCard from '../components/HomeProjectCard.jsx';
 import Navbar from '../components/Navbar.astro';
+import HomeProjectCard from '../components/HomeProjectCard.astro';
 ---
 <Layout title = "Projects" description="Srijan Ray's Personal Projects">
     <div>
@@ -19,13 +18,13 @@ import Navbar from '../components/Navbar.astro';
     </div>
     <div class="grid grid-cols-3">
         <div class="">
-            <ProjectCard />
+            <HomeProjectCard heading = "Machine Learning for Radiation Resistance Detection", href="/projects", photo="OverviewOfMLWebsite.png", altText="insert random stuff "/>
         </div>
         <div>
-            <ProjectCard />
+            <HomeProjectCard heading = "Deep Learning Image Segmentation for Breast Cancer Detection", href="/about", photo="PicForBCDLExp.png", altText="insert random stuff "/>
         </div>
         <div>
-            <ProjectCard />
+            <HomeProjectCard heading = "Project 1", href="/projects"/, photo="">
         </div>
     </div>
     

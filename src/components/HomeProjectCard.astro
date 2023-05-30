@@ -1,0 +1,19 @@
+---
+export interface Props {
+	heading: string;
+	href: string;
+    photo: string;
+    altText: string;
+}
+
+const { href, heading, photo, altText } = Astro.props;
+---
+<button>
+	<a href={href}>
+        <img src={photo} alt={altText}/>
+		<h2>
+			{heading}
+			<span>&rarr;</span>
+		</h2>
+	</a>
+</button>
